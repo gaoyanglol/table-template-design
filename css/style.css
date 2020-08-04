@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+.wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+.main {
+  width: 100%;
+  border: 1px solid #8fb5d9;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: center;
+}
+.main td {
+  padding: 3px 3px;
+  border: 1px solid #c8e1f1;
+  color: #174e77;
+  font-family: "PingFang SC","Microsoft YaHei", sans-serif;
+}
+.bgb {
+  background: #f3f8ff;
+}
+.txtal-l {
+  text-align: left;
+}
+.txtind {
+  text-indent: 2em;
+}
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height:25px;
+  text-align: center;
+  border: none;
+  font-family: "PingFang SC","Microsoft YaHei", sans-serif;
+  outline: none;
+}
+
+td.edit {
+  padding: 0;
+}
+td.edit input:focus {
+  border: 1px solid #37e9b3;
+  background: #edfff9;
+}
+td.edit input:hover {
+  background: #e8fff6;
+}
+td.req input {
+  background: #f2f1ff;
+  color: #5a55a5;
+}
+td.req input:hover {
+  background: #e7e6ff;
+}

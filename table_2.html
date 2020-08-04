@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-size: 12px;
+    }
+    .tab {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #adc9e6;
+      table-layout: fixed;
+    }
+    .tab td {
+      color: #666;
+      border: 1px solid #e2e2e2;
+      /* border-left: 1px solid #eaeff5; */
+      padding: 6px;
+      text-align: center;
+    }
+    .tab tr:nth-child(2n+1) {
+      background: #f5fafd;
+    }
+    /* .tab tr td:first-child {
+      background: #f5f8fa;
+      color: #1b242e;
+    } */
+    td.tl {
+      text-align: left;
+    }
+    .sub-item {
+      text-indent: 24px;
+    }
+    .tab th {
+      background: #dff0fc;
+      font-weight: normal;
+      font-size: 12px;
+      color: #0b74b6;
+      padding: 6px;
+      text-align: center;
+      border: 1px solid #fff;
+      line-height: 1;
+    }
+    .test {
+      display:inline-block;
+      overflow:hidden;
+      width:100%;
+      height:0;
+    }
+    .tab .features th {
+      background: #2f92cf;
+      color: #fff;
+      font-weight: bold;
+    }
+    .locale {
+      width: 200px;
+      height: 20px;
+      background: #1073b1;
+      color: #fff;
+      border: none;
+
+      line-height: 1;
+    }
+  </style>
+</head>
+<body>
+  <div style="width: 1060px;margin: auto;">
+    <p> </p>
+    <table class="tab">
+      <!-- <colgroup>
+        <col width="12%">
+        <col width="12%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col width="9.5%">
+        <col>
+      </colgroup> -->
+      <tbody>
+        <tr class="features">
+          <th>地区</th>
+          <th colspan="9" style="text-align:left;padding: 3px">
+            <select class="locale">
+              <option selected value="">常州市</option>
+              <option value="">无锡市</option>
+              <option value="">苏州市</option>
+            </select>
+          </th>          
+        </tr>
+        <tr class="features">
+            <th>计算期</th>
+            <th colspan="9" style="text-align:left;padding: 4px">年度</th>
+        </tr>
+        <tr>
+          <th rowspan="4">指标</th>
+          <th rowspan="3">户籍人口</th>
+          <th colspan="4">按性别分按性别分按性别分按性别分按性别分按性别分按性别分按性别分</th>
+          <th colspan="4">按城乡分按城乡分按城乡分按城乡分按城乡分按城乡分按城乡分按城乡分</th>
+        </tr>
+        <tr>
+          <th colspan="2">男</th>
+          <th colspan="2">女</th>
+          <th colspan="2">城镇</th>
+          <th colspan="2">乡村</th>
+        </tr>
+        <tr>
+          <th>人口数</th>
+          <th>比重(%)</th>
+          <th>人口数</th>
+          <th>比重(%)</th>
+          <th>人口数</th>
+          <th>比重(%)</th>
+          <th>人口数</th>
+          <th>比重(%)</th>
+        </tr>
+        <tr>
+          <th>人</th>
+          <th>人</th>
+          <th>%</th>
+          <th>人</th>
+          <th>%</th>
+          <th>人</th>
+          <th>%</th>
+          <th>人</th>
+          <th>%</th>
+        </tr>
+        <tr>
+          <th>甲</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+          <th>7</th>
+          <th>8</th>
+          <th>9</th>
+        </tr>
+        <tr>
+          <td>1959年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1960年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1978年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1980年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1985年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+        <tr>
+          <td>1990年</td>
+          <td>245081</td>
+          <td>118129</td>
+          <td>48.2</td>
+          <td>126952</td>
+          <td>51.8</td>
+          <td>77799</td>
+          <td>31.7</td>
+          <td>167282</td>
+          <td>68.3</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
